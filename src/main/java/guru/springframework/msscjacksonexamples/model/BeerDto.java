@@ -1,5 +1,6 @@
 package guru.springframework.msscjacksonexamples.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
 import javax.validation.constraints.NotBlank;
@@ -19,6 +20,11 @@ import java.util.UUID;
 @ToString
 public class BeerDto {
 
+    /**
+     * @JsonProperty lo utilizamos para indicar el nombre con el que queremos que se serialize la propiedad,
+     * sobreescribe lo que se haya especificado en las estrategias
+     */
+    @JsonProperty(value = "beerId")
     @Null
     private UUID id;
 

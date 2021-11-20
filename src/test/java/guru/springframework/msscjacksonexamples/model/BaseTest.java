@@ -1,6 +1,8 @@
 package guru.springframework.msscjacksonexamples.model;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
@@ -8,6 +10,10 @@ import java.util.UUID;
 
 @Slf4j
 public class BaseTest {
+
+    @Autowired
+    ObjectMapper objectMapper;
+
     BeerDto getDto(){
         return  BeerDto.builder()
                 .beerName("BeerName")

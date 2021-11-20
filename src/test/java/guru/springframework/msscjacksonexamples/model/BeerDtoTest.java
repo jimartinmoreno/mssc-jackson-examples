@@ -22,9 +22,6 @@ import java.io.IOException;
 @Slf4j
 class BeerDtoTest extends BaseTest{
 
-    @Autowired
-    ObjectMapper objectMapper;
-
     @Test
     void testSerializeDto() throws JsonProcessingException {
         BeerDto beerDto = getDto();
