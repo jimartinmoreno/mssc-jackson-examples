@@ -1,12 +1,12 @@
 package guru.springframework.msscjacksonexamples.model;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
-/**
- * Created by jt on 2019-06-02.
- */
+@Slf4j
 public class BaseTest {
     BeerDto getDto(){
         return  BeerDto.builder()
