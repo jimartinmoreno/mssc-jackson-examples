@@ -9,9 +9,6 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-/**
- * Created by jt on 2019-06-03.
- */
 public class LocalDateDeserializer extends StdDeserializer<LocalDate> {
 
     public LocalDateDeserializer() {
